@@ -1,110 +1,44 @@
-{
-  "cleanUrls": true,
+import json, os, pathlib, textwrap, re, sys, math
+data = {
+  "cleanUrls": True,
   "redirects": [
-    {
-      "source": "/",
-      "destination": "/vtb",
-      "permanent": false
-    },
-    {
-      "source": "/vtb",
-      "destination": "https://trk.xplink.io/click?pid=8833&offer_id=13",
-      "permanent": false
-    },
-    {
-      "source": "/vtb_offer",
-      "destination": "https://trk.xplink.io/click?pid=8833&offer_id=13",
-      "permanent": false
-    },
-    {
-      "source": "/vtb_offer.html",
-      "destination": "https://trk.xplink.io/click?pid=8833&offer_id=13",
-      "permanent": false
-    },
-    {
-      "source": "/sticker",
-      "destination": "https://trk.xplink.io/click?pid=8833&offer_id=1268",
-      "permanent": false
-    },
-    {
-      "source": "/sticker.html",
-      "destination": "https://trk.xplink.io/click?pid=8833&offer_id=1268",
-      "permanent": false
-    },
-    {
-      "source": "/vtb_foreign",
-      "destination": "https://trk.xplink.io/click?pid=8833&offer_id=2664",
-      "permanent": false
-    },
-    {
-      "source": "/vtb_foreign.html",
-      "destination": "https://trk.xplink.io/click?pid=8833&offer_id=2664",
-      "permanent": false
-    },
-    {
-      "source": "/fora",
-      "destination": "https://trk.xpgoal.io/click?pid=8833&offer_id=952",
-      "permanent": false
-    },
-    {
-      "source": "/mts",
-      "destination": "https://trk.xplink.io/click?pid=8833&offer_id=2405",
-      "permanent": false
-    },
-    {
-      "source": "/mts.html",
-      "destination": "https://trk.xplink.io/click?pid=8833&offer_id=2405",
-      "permanent": false
-    },
-    {
-      "source": "/alfa",
-      "destination": "https://trk.xplink.io/click?pid=8833&offer_id=2405",
-      "permanent": false
-    },
-    {
-      "source": "/alfa.html",
-      "destination": "https://trk.xplink.io/click?pid=8833&offer_id=2405",
-      "permanent": false
-    },
-    {
-      "source": "/gpbank",
-      "destination": "https://trk.xplink.io/click?pid=8833&offer_id=2405",
-      "permanent": false
-    },
-    {
-      "source": "/gpbank.html",
-      "destination": "https://trk.xplink.io/click?pid=8833&offer_id=2405",
-      "permanent": false
-    },
-    {
-      "source": "/otp",
-      "destination": "https://trk.xplink.io/click?pid=8833&offer_id=2405",
-      "permanent": false
-    },
-    {
-      "source": "/otp.html",
-      "destination": "https://trk.xplink.io/click?pid=8833&offer_id=2405",
-      "permanent": false
-    },
-    {
-      "source": "/uralsib",
-      "destination": "https://trk.xplink.io/click?pid=8833&offer_id=2405",
-      "permanent": false
-    },
-    {
-      "source": "/uralsib.html",
-      "destination": "https://trk.xplink.io/click?pid=8833&offer_id=2405",
-      "permanent": false
-    },
-    {
-      "source": "/ubr",
-      "destination": "https://trk.xpgoal.io/click?pid=8833&offer_id=952",
-      "permanent": false
-    },
-    {
-      "source": "/ubr.html",
-      "destination": "https://trk.xpgoal.io/click?pid=8833&offer_id=952",
-      "permanent": false
-    }
+    {"source": "/", "destination": "/vtb", "permanent": False},
+
+    {"source": "/vtb", "destination": "https://trk.xplink.io/click?pid=8833&offer_id=2405", "permanent": False},
+    {"source": "/vtb_offer", "destination": "https://trk.xplink.io/click?pid=8833&offer_id=2405", "permanent": False},
+    {"source": "/vtb_offer.html", "destination": "https://trk.xplink.io/click?pid=8833&offer_id=2405", "permanent": False},
+
+    {"source": "/sticker", "destination": "https://trk.xplink.io/click?pid=8833&offer_id=1268", "permanent": False},
+    {"source": "/sticker.html", "destination": "https://trk.xplink.io/click?pid=8833&offer_id=1268", "permanent": False},
+
+    {"source": "/vtb_foreign", "destination": "https://trk.xplink.io/click?pid=8833&offer_id=2664", "permanent": False},
+    {"source": "/vtb_foreign.html", "destination": "https://trk.xplink.io/click?pid=8833&offer_id=2664", "permanent": False},
+
+    # Active Fora Bank
+    {"source": "/fora", "destination": "https://trk.xpgoal.io/click?pid=8833&offer_id=952", "permanent": False},
+
+    # Old tails kept alive (pointing to main VTB unless otherwise stated)
+    {"source": "/mts", "destination": "https://trk.xplink.io/click?pid=8833&offer_id=2405", "permanent": False},
+    {"source": "/mts.html", "destination": "https://trk.xplink.io/click?pid=8833&offer_id=2405", "permanent": False},
+
+    {"source": "/alfa", "destination": "https://trk.xplink.io/click?pid=8833&offer_id=2405", "permanent": False},
+    {"source": "/alfa.html", "destination": "https://trk.xplink.io/click?pid=8833&offer_id=2405", "permanent": False},
+
+    # Gaspr/GPBank now goes to its real offer 2468
+    {"source": "/gpbank", "destination": "https://trk.xplink.io/click?pid=8833&offer_id=2468", "permanent": False},
+    {"source": "/gpbank.html", "destination": "https://trk.xplink.io/click?pid=8833&offer_id=2468", "permanent": False},
+
+    {"source": "/otp", "destination": "https://trk.xplink.io/click?pid=8833&offer_id=2405", "permanent": False},
+    {"source": "/otp.html", "destination": "https://trk.xplink.io/click?pid=8833&offer_id=2405", "permanent": False},
+
+    {"source": "/uralsib", "destination": "https://trk.xplink.io/click?pid=8833&offer_id=2405", "permanent": False},
+    {"source": "/uralsib.html", "destination": "https://trk.xplink.io/click?pid=8833&offer_id=2405", "permanent": False},
   ]
 }
+
+out_path = "/mnt/data/vercel_final.json"
+with open(out_path, "w", encoding="utf-8") as f:
+    json.dump(data, f, ensure_ascii=False, indent=2)
+
+(out_path, os.path.getsize(out_path))
+
