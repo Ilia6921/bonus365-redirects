@@ -1,118 +1,100 @@
 {
-"cleanUrls": true,
-"redirects": [
-{
-"source": "/",
-"destination": "/vtb",
-"permanent": false
-},
-{
-"source": "/vtb",
-"destination": "https://trk.xplink.io/click?pid=8833&offer_id=2405
-",
-"permanent": false
-},
-{
-"source": "/vtb_offer",
-"destination": "https://trk.xplink.io/click?pid=8833&offer_id=2405
-",
-"permanent": false
-},
-{
-"source": "/vtb_offer.html",
-"destination": "https://trk.xplink.io/click?pid=8833&offer_id=2405
-",
-"permanent": false
-},
-{
-"source": "/sticker",
-"destination": "https://trk.xplink.io/click?pid=8833&offer_id=1268
-",
-"permanent": false
-},
-{
-"source": "/sticker.html",
-"destination": "https://trk.xplink.io/click?pid=8833&offer_id=1268
-",
-"permanent": false
-},
-{
-"source": "/vtb_foreign",
-"destination": "https://trk.xplink.io/click?pid=8833&offer_id=2664
-",
-"permanent": false
-},
-{
-"source": "/vtb_foreign.html",
-"destination": "https://trk.xplink.io/click?pid=8833&offer_id=2664
-",
-"permanent": false
-},
-{
-"source": "/fora",
-"destination": "https://trk.xpgoal.io/click?pid=8833&offer_id=952
-",
-"permanent": false
-},
-{
-"source": "/mts",
-"destination": "https://trk.xplink.io/click?pid=8833&offer_id=2405
-",
-"permanent": false
-},
-{
-"source": "/mts.html",
-"destination": "https://trk.xplink.io/click?pid=8833&offer_id=2405
-",
-"permanent": false
-},
-{
-"source": "/alfa",
-"destination": "https://trk.xplink.io/click?pid=8833&offer_id=2405
-",
-"permanent": false
-},
-{
-"source": "/alfa.html",
-"destination": "https://trk.xplink.io/click?pid=8833&offer_id=2405
-",
-"permanent": false
-},
-{
-"source": "/gpbank",
-"destination": "https://trk.xplink.io/click?pid=8833&offer_id=2468
-",
-"permanent": false
-},
-{
-"source": "/gpbank.html",
-"destination": "https://trk.xplink.io/click?pid=8833&offer_id=2468
-",
-"permanent": false
-},
-{
-"source": "/otp",
-"destination": "https://trk.xplink.io/click?pid=8833&offer_id=2405
-",
-"permanent": false
-},
-{
-"source": "/otp.html",
-"destination": "https://trk.xplink.io/click?pid=8833&offer_id=2405
-",
-"permanent": false
-},
-{
-"source": "/uralsib",
-"destination": "https://trk.xplink.io/click?pid=8833&offer_id=2405
-",
-"permanent": false
-},
-{
-"source": "/uralsib.html",
-"destination": "https://trk.xplink.io/click?pid=8833&offer_id=2405
-",
-"permanent": false
-}
-]
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/vtb",
+      "permanent": false
+    },
+    {
+      "source": "/vtb",
+      "destination": "https://trk.xplink.io/click?pid=8833&offer_id=2405",
+      "permanent": false
+    },
+    {
+      "source": "/vtb_offer",
+      "destination": "https://trk.xplink.io/click?pid=8833&offer_id=2405",
+      "permanent": false
+    },
+    {
+      "source": "/vtb_offer.html",
+      "destination": "https://trk.xplink.io/click?pid=8833&offer_id=2405",
+      "permanent": false
+    },
+    {
+      "source": "/sticker",
+      "destination": "https://trk.xplink.io/click?pid=8833&offer_id=1268",
+      "permanent": false
+    },
+    {
+      "source": "/sticker.html",
+      "destination": "https://trk.xplink.io/click?pid=8833&offer_id=1268",
+      "permanent": false
+    },
+    {
+      "source": "/vtb_foreign",
+      "destination": "https://trk.xplink.io/click?pid=8833&offer_id=2664",
+      "permanent": false
+    },
+    {
+      "source": "/vtb_foreign.html",
+      "destination": "https://trk.xplink.io/click?pid=8833&offer_id=2664",
+      "permanent": false
+    },
+    {
+      "source": "/fora",
+      "destination": "https://trk.xpgoal.io/click?pid=8833&offer_id=952",
+      "permanent": false
+    },
+    {
+      "source": "/mts",
+      "destination": "https://trk.xplink.io/click?pid=8833&offer_id=2405",
+      "permanent": false
+    },
+    {
+      "source": "/mts.html",
+      "destination": "https://trk.xplink.io/click?pid=8833&offer_id=2405",
+      "permanent": false
+    },
+    {
+      "source": "/alfa",
+      "destination": "https://trk.xplink.io/click?pid=8833&offer_id=2405",
+      "permanent": false
+    },
+    {
+      "source": "/alfa.html",
+      "destination": "https://trk.xplink.io/click?pid=8833&offer_id=2405",
+      "permanent": false
+    },
+    {
+      "source": "/gpbank",
+      "destination": "https://trk.xplink.io/click?pid=8833&offer_id=2468",
+      "permanent": false
+    },
+    {
+      "source": "/gpbank.html",
+      "destination": "https://trk.xplink.io/click?pid=8833&offer_id=2468",
+      "permanent": false
+    },
+    {
+      "source": "/otp",
+      "destination": "https://trk.xplink.io/click?pid=8833&offer_id=2405",
+      "permanent": false
+    },
+    {
+      "source": "/otp.html",
+      "destination": "https://trk.xplink.io/click?pid=8833&offer_id=2405",
+      "permanent": false
+    },
+    {
+      "source": "/uralsib",
+      "destination": "https://trk.xplink.io/click?pid=8833&offer_id=2405",
+      "permanent": false
+    },
+    {
+      "source": "/uralsib.html",
+      "destination": "https://trk.xplink.io/click?pid=8833&offer_id=2405",
+      "permanent": false
+    }
+  ]
 }
