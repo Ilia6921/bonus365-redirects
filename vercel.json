@@ -37,62 +37,53 @@
 },
 
 {
+  "source": "/fora",
+  "destination": "https://trk.xpgoal.io/click?pid=8833&offer_id=952",
+  "permanent": false
+},
+
+// хвосты для старых ссылок (чтобы не умирали), ведут на главный ВТБ
+{
   "source": "/mts",
-  "destination": "https://trk.xplink.io/click?pid=7460&offer_id=1725",
+  "destination": "https://trk.xplink.io/click?pid=8833&offer_id=2405",
   "permanent": false
 },
 {
   "source": "/mts.html",
-  "destination": "https://trk.xplink.io/click?pid=7460&offer_id=1725",
+  "destination": "https://trk.xplink.io/click?pid=8833&offer_id=2405",
   "permanent": false
 },
 
 {
   "source": "/alfa",
-  "destination": "https://trk.xplink.io/click?pid=8833&offer_id=2540",
+  "destination": "https://trk.xplink.io/click?pid=8833&offer_id=2405",
   "permanent": false
 },
 {
   "source": "/alfa.html",
-  "destination": "https://trk.xplink.io/click?pid=8833&offer_id=2540",
+  "destination": "https://trk.xplink.io/click?pid=8833&offer_id=2405",
   "permanent": false
 },
 
 {
   "source": "/gpbank",
-  "destination": "https://trk.xplink.io/click?pid=8833&offer_id=2468",
+  "destination": "https://trk.xplink.io/click?pid=8833&offer_id=2405",
   "permanent": false
 },
 {
   "source": "/gpbank.html",
-  "destination": "https://trk.xplink.io/click?pid=8833&offer_id=2468",
+  "destination": "https://trk.xplink.io/click?pid=8833&offer_id=2405",
   "permanent": false
 },
 
 {
   "source": "/otp",
-  "destination": "https://trk.xpgoal.io/click?pid=8833&offer_id=2011",
+  "destination": "https://trk.xplink.io/click?pid=8833&offer_id=2405",
   "permanent": false
 },
 {
   "source": "/otp.html",
-  "destination": "https://trk.xpgoal.io/click?pid=8833&offer_id=2011",
-  "permanent": false
-},
-
-{
-  "source": "/fora",
-  "destination": "https://trk.xpgoal.io/click?pid=8833&offer_id=952",
-  "permanent": false
-},
-{
-  "source": "/ubr",
-  "destination": "https://trk.xpgoal.io/click?pid=8833&offer_id=952",
-  "permanent": false
-},
-{
-  "source": "/ubr.html",
-  "destination": "https://trk.xpgoal.io/click?pid=8833&offer_id=952",
+  "destination": "https://trk.xplink.io/click?pid=8833&offer_id=2405",
   "permanent": false
 },
 
@@ -107,33 +98,14 @@
   "permanent": false
 },
 
+// старый ubr теперь фора
 {
-  "source": "/rko_vtb",
-  "destination": "https://trk.xplink.io/click?pid=8833&offer_id=2405",
+  "source": "/ubr",
+  "destination": "https://trk.xpgoal.io/click?pid=8833&offer_id=952",
   "permanent": false
 },
 {
-  "source": "/rko_vtb.html",
-  "destination": "https://trk.xplink.io/click?pid=8833&offer_id=2405",
-  "permanent": false
-},
-{
-  "source": "/rko_alfa",
-  "destination": "https://trk.xplink.io/click?pid=8833&offer_id=2405",
-  "permanent": false
-},
-{
-  "source": "/rko_alfa.html",
-  "destination": "https://trk.xplink.io/click?pid=8833&offer_id=2405",
-  "permanent": false
-},
-{
-  "source": "/rko_psb",
-  "destination": "https://trk.xplink.io/click?pid=8833&offer_id=2405",
-  "permanent": false
-},
-{
-  "source": "/rko_psb.html",
-  "destination": "https://trk.xplink.io/click?pid=8833&offer_id=2405",
+  "source": "/ubr.html",
+  "destination": "https://trk.xpgoal.io/click?pid=8833&offer_id=952",
   "permanent": false
 }
