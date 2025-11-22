@@ -8,17 +8,17 @@
     },
     {
       "source": "/vtb",
-      "destination": "https://trk.xplink.io/click?pid=8833&offer_id=2405",
+      "destination": "https://trk.xplink.io/click?pid=8833&offer_id=13",
       "permanent": false
     },
     {
       "source": "/vtb_offer",
-      "destination": "https://trk.xplink.io/click?pid=8833&offer_id=2405",
+      "destination": "https://trk.xplink.io/click?pid=8833&offer_id=13",
       "permanent": false
     },
     {
       "source": "/vtb_offer.html",
-      "destination": "https://trk.xplink.io/click?pid=8833&offer_id=2405",
+      "destination": "https://trk.xplink.io/click?pid=8833&offer_id=13",
       "permanent": false
     },
     {
